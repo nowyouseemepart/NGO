@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Donation! - Hope & Action NGO</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .btn-primary {
+            background-color: #059669; /* Emerald 600 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #047857; /* Emerald 700 */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+    </style>
+
+    <!-- Google Tag Manager (GTM) - Head Script -->
+    <!-- Place the GTM <script> tag here, as provided by Google Tag Manager -->
+    <!-- Example:
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    -->
+    <!-- End Google Tag Manager -->
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Google Tag Manager (GTM) - NoScript -->
+    <!-- Place the GTM <noscript> tag here, immediately after the <body> tag -->
+    <!-- Example:
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    -->
+    <!-- End Google Tag Manager -->
+
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-2xl font-bold text-emerald-600">Hope & Action NGO</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-emerald-600 font-medium">Awareness</a>
+                <a href="volunteer.html" class="text-gray-700 hover:text-emerald-600 font-medium">Volunteer</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 flex items-center justify-center">
+        <section class="card w-full max-w-2xl text-center">
+            <h1 class="text-5xl font-extrabold text-emerald-600 mb-4">Thank You!</h1>
+            <p class="text-2xl text-gray-800 mb-6">Your generous donation has been successfully received.</p>
+            <p class="text-lg text-gray-700 mb-8">
+                Your contribution makes a direct impact on our mission to empower communities and build a brighter future. We are incredibly grateful for your support.
+            </p>
+            <div class="mb-8">
+                <img src="https://placehold.co/400x200/e0f2f7/059669?text=Thank+You+%E2%9D%A4" alt="Thank You Image" class="mx-auto rounded-lg shadow-md">
+            </div>
+            <a href="index.html" class="btn-primary inline-block text-xl py-3">Return to Homepage</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Hope & Action NGO. All rights reserved.</p>
+            <p class="text-sm mt-2">Contact us: info@hopeandaction.org</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- GTM Data Layer Push for Donation Conversion ---
+        // This page view itself serves as the conversion event for a donation.
+        // In GTM, you would set up a Page View trigger for this specific URL
+        // and link it to a Google Analytics (GA4 or Universal Analytics) conversion event/goal.
+        // Alternatively, you could push a custom event here if more granular data is needed.
+        if (typeof dataLayer !== 'undefined') {
+            dataLayer.push({
+                'event': 'donation_complete',
+                'eventCategory': 'Conversion',
+                'eventAction': 'Donation',
+                'eventLabel': 'Donation Thank You Page View'
+            });
+            console.log('GTM Event: donation_complete fired (Thank You Page View)');
+        }
+    </script>
+</body>
+</html>
