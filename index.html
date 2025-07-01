@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cause - Hope & Action NGO</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        /* Custom styles for better aesthetics */
+        .container {
+            max-width: 1200px;
+        }
+        .btn-primary {
+            background-color: #059669; /* Emerald 600 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #047857; /* Emerald 700 */
+        }
+        .btn-secondary {
+            background-color: #3b82f6; /* Blue 500 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #2563eb; /* Blue 600 */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        /* Ensure content is long enough for scroll tracking */
+        .long-content {
+            line-height: 1.8;
+            text-align: justify;
+        }
+    </style>
+
+    <!-- Google Tag Manager (GTM) - Head Script -->
+    <!-- Place the GTM <script> tag here, as provided by Google Tag Manager -->
+    <!-- Example:
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    -->
+    <!-- End Google Tag Manager -->
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Google Tag Manager (GTM) - NoScript -->
+    <!-- Place the GTM <noscript> tag here, immediately after the <body> tag -->
+    <!-- Example:
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    -->
+    <!-- End Google Tag Manager -->
+
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-2xl font-bold text-emerald-600">Hope & Action NGO</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-emerald-600 font-medium">Awareness</a>
+                <a href="volunteer.html" class="text-gray-700 hover:text-emerald-600 font-medium">Volunteer</a>
+                <!-- Donation Thank You page is not directly linked in nav as it's a post-action page -->
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-gray-800 mb-4">Empowering Communities, Building Futures</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Join Hope & Action NGO in our mission to create lasting positive change for those in need. Every action, big or small, makes a difference.</p>
+            <div class="mt-8 space-x-4">
+                <a href="#donate" id="donateButton" class="btn-primary inline-block">Donate Now</a>
+                <a href="volunteer.html" id="volunteerButton" class="btn-secondary inline-block">Become a Volunteer</a>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                <p class="text-gray-700 long-content">
+                    Hope & Action NGO is dedicated to alleviating poverty, promoting education, and ensuring access to basic healthcare in underserved communities. We believe in sustainable development and empowering individuals to build a better future for themselves and their families. Our programs focus on long-term solutions, from providing educational resources and vocational training to establishing community health centers and clean water initiatives. We work closely with local leaders and community members to identify their most pressing needs and develop culturally sensitive, effective solutions. Our commitment extends to advocating for policy changes that support equitable access to resources and opportunities for all.
+                    <br><br>
+                    We strive to create a world where every individual has the opportunity to thrive, regardless of their background or circumstances. Our team is composed of passionate individuals committed to making a tangible difference, and we rely heavily on the support of volunteers and donors to achieve our goals. Your involvement, whether through financial contributions or by dedicating your time, directly impacts the lives of thousands. Together, we can break cycles of poverty and build resilient, empowered communities. We regularly assess the impact of our programs to ensure transparency and effectiveness, and we are always looking for innovative ways to expand our reach and deepen our impact.
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What We Do</h2>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 long-content">
+                    <li><strong class="text-emerald-600">Education Initiatives:</strong> Building schools, providing scholarships, and supplying learning materials to children in remote areas. We also support adult literacy programs.</li>
+                    <li><strong class="text-emerald-600">Healthcare Access:</strong> Establishing mobile clinics, conducting health camps, and providing essential medicines to those without access to medical facilities.</li>
+                    <li><strong class="text-emerald-600">Sustainable Livelihoods:</strong> Offering vocational training, micro-finance support, and agricultural assistance to help families achieve economic independence.</li>
+                    <li><strong class="text-emerald-600">Clean Water & Sanitation:</strong> Drilling wells, implementing water purification systems, and promoting hygiene education to prevent waterborne diseases.</li>
+                    <li><strong class="text-emerald-600">Emergency Relief:</strong> Providing immediate aid, food, and shelter to communities affected by natural disasters or crises.</li>
+                    <li><strong class="text-emerald-600">Community Empowerment:</strong> Organizing workshops and forums to foster leadership, civic participation, and self-reliance within communities.</li>
+                    <li><strong class="text-emerald-600">Advocacy & Awareness:</strong> Raising public awareness about critical social issues and advocating for policies that protect vulnerable populations.</li>
+                    <li><strong class="text-emerald-600">Environmental Protection:</strong> Engaging in reforestation projects, promoting sustainable practices, and educating communities on environmental conservation.</li>
+                    <li><strong class="text-emerald-600">Child Protection:</strong> Implementing programs to safeguard children from exploitation, abuse, and neglect, and ensuring their right to a safe environment.</li>
+                    <li><strong class="text-emerald-600">Women's Empowerment:</strong> Supporting women's self-help groups, providing skill development, and promoting gender equality through various initiatives.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="donate" class="card text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">How You Can Help</h2>
+            <p class="text-lg text-gray-700 mb-6">Your support is vital to our work. Whether it's a one-time donation or becoming a regular contributor, every bit helps us continue our mission.</p>
+            <a href="#" id="simulatedDonationClick" class="btn-primary inline-block text-xl">Make a Donation Today!</a>
+            <p class="text-sm text-gray-500 mt-2">
+                (Note: This is a simulated donation button for demonstration purposes.
+                In a real application, this would link to a secure payment gateway.)
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Hope & Action NGO. All rights reserved.</p>
+            <p class="text-sm mt-2">Contact us: info@hopeandaction.org</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- GTM Data Layer Push for Simulated Events ---
+        // This JavaScript is for demonstration purposes to show how GTM events could be triggered.
+        // In a real scenario, GTM would be configured to listen for these clicks automatically
+        // or through custom JavaScript variables/triggers.
+
+        document.getElementById('donateButton').addEventListener('click', function() {
+            // Simulate a GTM dataLayer push for a donation button click
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({
+                    'event': 'cta_click',
+                    'eventCategory': 'Navigation',
+                    'eventAction': 'Click',
+                    'eventLabel': 'Donate Now Button - Top'
+                });
+                console.log('GTM Event: donateButton clicked');
+            }
+            // For this simulation, we'll just log. In a real app, this would redirect to a donation form.
+            // For the purpose of this simulation, we will redirect to the thank you page.
+            setTimeout(() => {
+                window.location.href = 'thankyou.html';
+            }, 100); // Small delay to allow GTM event to fire
+        });
+
+        document.getElementById('volunteerButton').addEventListener('click', function() {
+            // Simulate a GTM dataLayer push for a volunteer button click
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({
+                    'event': 'cta_click',
+                    'eventCategory': 'Navigation',
+                    'eventAction': 'Click',
+                    'eventLabel': 'Become a Volunteer Button - Top'
+                });
+                console.log('GTM Event: volunteerButton clicked');
+            }
+            // This button already links to volunteer.html, so no additional redirect needed here.
+        });
+
+        document.getElementById('simulatedDonationClick').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior for this simulated button
+            // Simulate a GTM dataLayer push for the main donation CTA click
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({
+                    'event': 'donation_initiate',
+                    'eventCategory': 'Donation',
+                    'eventAction': 'Click',
+                    'eventLabel': 'Make a Donation Today! Button - Bottom'
+                });
+                console.log('GTM Event: simulatedDonationClick clicked');
+            }
+            // Simulate redirection to the thank you page after a "successful" donation process
+            setTimeout(() => {
+                window.location.href = 'thankyou.html';
+            }, 100); // Small delay to allow GTM event to fire
+        });
+
+        // --- GTM Scroll Tracking (Conceptual) ---
+        // In a real GTM setup, scroll depth tracking is often handled via a built-in trigger.
+        // However, if custom implementation is needed, you could use something like this:
+        window.addEventListener('scroll', function() {
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = window.scrollY;
+            const scrollPercentage = (scrolled / scrollHeight) * 100;
+
+            // Example: Fire events at 25%, 50%, 75%, 100%
+            // In GTM, you'd typically use a variable to store the last fired percentage
+            // to avoid firing multiple times for the same threshold.
+            if (scrollPercentage >= 25 && scrollPercentage < 50) {
+                if (!window._scroll25Fired) {
+                    if (typeof dataLayer !== 'undefined') {
+                        dataLayer.push({
+                            'event': 'scroll_depth',
+                            'eventCategory': 'Engagement',
+                            'eventAction': 'Scroll',
+                            'eventLabel': '25% Scrolled - Awareness Page'
+                        });
+                        console.log('GTM Event: 25% scrolled');
+                    }
+                    window._scroll25Fired = true;
+                }
+            } else if (scrollPercentage >= 50 && scrollPercentage < 75) {
+                if (!window._scroll50Fired) {
+                    if (typeof dataLayer !== 'undefined') {
+                        dataLayer.push({
+                            'event': 'scroll_depth',
+                            'eventCategory': 'Engagement',
+                            'eventAction': 'Scroll',
+                            'eventLabel': '50% Scrolled - Awareness Page'
+                        });
+                        console.log('GTM Event: 50% scrolled');
+                    }
+                    window._scroll50Fired = true;
+                }
+            } else if (scrollPercentage >= 75 && scrollPercentage < 99) {
+                if (!window._scroll75Fired) {
+                    if (typeof dataLayer !== 'undefined') {
+                        dataLayer.push({
+                            'event': 'scroll_depth',
+                            'eventCategory': 'Engagement',
+                            'eventAction': 'Scroll',
+                            'eventLabel': '75% Scrolled - Awareness Page'
+                        });
+                        console.log('GTM Event: 75% scrolled');
+                    }
+                    window._scroll75Fired = true;
+                }
+            } else if (scrollPercentage >= 99) { // Use 99 to account for minor discrepancies
+                if (!window._scroll100Fired) {
+                    if (typeof dataLayer !== 'undefined') {
+                        dataLayer.push({
+                            'event': 'scroll_depth',
+                            'eventCategory': 'Engagement',
+                            'eventAction': 'Scroll',
+                            'eventLabel': '100% Scrolled - Awareness Page'
+                        });
+                        console.log('GTM Event: 100% scrolled');
+                    }
+                    window._scroll100Fired = true;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
