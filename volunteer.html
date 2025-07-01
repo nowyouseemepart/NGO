@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Signup - Hope & Action NGO</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .btn-primary {
+            background-color: #059669; /* Emerald 600 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #047857; /* Emerald 700 */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db; /* Gray 300 */
+            border-radius: 0.375rem;
+            margin-top: 0.25rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+
+    <!-- Google Tag Manager (GTM) - Head Script -->
+    <!-- Place the GTM <script> tag here, as provided by Google Tag Manager -->
+    <!-- Example:
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    -->
+    <!-- End Google Tag Manager -->
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Google Tag Manager (GTM) - NoScript -->
+    <!-- Place the GTM <noscript> tag here, immediately after the <body> tag -->
+    <!-- Example:
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    -->
+    <!-- End Google Tag Manager -->
+
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-2xl font-bold text-emerald-600">Hope & Action NGO</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-emerald-600 font-medium">Awareness</a>
+                <a href="volunteer.html" class="text-gray-700 hover:text-emerald-600 font-medium">Volunteer</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 flex items-center justify-center">
+        <section class="card w-full max-w-2xl">
+            <h1 class="text-4xl font-extrabold text-gray-800 mb-6 text-center">Become a Volunteer</h1>
+            <p class="text-lg text-gray-700 mb-8 text-center">Your time and skills can make a profound difference. Please fill out the form below to join our dedicated team of volunteers.</p>
+
+            <form id="volunteerForm" class="space-y-4">
+                <div>
+                    <label for="fullName" class="block text-gray-700 font-medium mb-1">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required class="focus:ring-emerald-500 focus:border-emerald-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required class="focus:ring-emerald-500 focus:border-emerald-500">
+                </div>
+                <div>
+                    <label for="phone" class="block text-gray-700 font-medium mb-1">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" class="focus:ring-emerald-500 focus:border-emerald-500">
+                </div>
+                <div>
+                    <label for="availability" class="block text-gray-700 font-medium mb-1">Preferred Availability</label>
+                    <textarea id="availability" name="availability" rows="3" placeholder="e.g., Weekends, Tuesdays and Thursdays, Flexible" class="focus:ring-emerald-500 focus:border-emerald-500"></textarea>
+                </div>
+                <div>
+                    <label for="skills" class="block text-gray-700 font-medium mb-1">Skills/Areas of Interest (e.g., teaching, marketing, event planning)</label>
+                    <textarea id="skills" name="skills" rows="3" placeholder="Tell us about your skills and how you'd like to contribute." required class="focus:ring-emerald-500 focus:border-emerald-500"></textarea>
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="newsletter" name="newsletter" class="rounded text-emerald-600 focus:ring-emerald-500">
+                    <label for="newsletter" class="text-gray-700">Sign me up for the Hope & Action NGO newsletter!</label>
+                </div>
+                <button type="submit" class="btn-primary w-full text-xl py-3 mt-6">Submit Application</button>
+            </form>
+            <div id="formMessage" class="mt-4 text-center text-green-600 font-semibold hidden"></div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Hope & Action NGO. All rights reserved.</p>
+            <p class="text-sm mt-2">Contact us: info@hopeandaction.org</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('volunteerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formMessage = document.getElementById('formMessage');
+            formMessage.textContent = ''; // Clear previous messages
+            formMessage.classList.add('hidden');
+
+            // Basic form validation (for simulation)
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const skills = document.getElementById('skills').value.trim();
+
+            if (!fullName || !email || !skills) {
+                formMessage.textContent = 'Please fill in all required fields (Full Name, Email, Skills).';
+                formMessage.classList.remove('hidden');
+                formMessage.classList.remove('text-green-600');
+                formMessage.classList.add('text-red-600');
+                return;
+            }
+
+            // Simulate form submission success
+            console.log('Volunteer form submitted:', {
+                fullName: fullName,
+                email: email,
+                phone: document.getElementById('phone').value.trim(),
+                availability: document.getElementById('availability').value.trim(),
+                skills: skills,
+                newsletter: document.getElementById('newsletter').checked
+            });
+
+            // --- GTM Data Layer Push for Form Submission ---
+            // This is the key event for conversion tracking.
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({
+                    'event': 'volunteer_form_submit',
+                    'eventCategory': 'Form Submission',
+                    'eventAction': 'Submit',
+                    'eventLabel': 'Volunteer Signup Form Success'
+                });
+                console.log('GTM Event: volunteer_form_submit fired');
+            }
+
+            formMessage.textContent = 'Thank you for signing up to volunteer! We will be in touch soon.';
+            formMessage.classList.remove('hidden');
+            formMessage.classList.remove('text-red-600');
+            formMessage.classList.add('text-green-600');
+
+            // Optionally, clear the form after successful submission
+            document.getElementById('volunteerForm').reset();
+        });
+    </script>
+</body>
+</html>
